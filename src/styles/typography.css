@@ -1,0 +1,52 @@
+/* Typography styles and chemical formula formatting */
+body {
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+
+p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+/* Chemical formulas */
+.chemical-formula {
+  font-weight: 600;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  letter-spacing: 0.02em;
+}
+
+.chemical-formula sub {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  bottom: -0.25em;
+}
+
+.chemical-formula sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.4em;
+}
+
+.reaction-arrow {
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
